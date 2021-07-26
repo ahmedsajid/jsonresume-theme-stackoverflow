@@ -344,7 +344,8 @@ h2.section-title {
 .area,
 .studyType,
 .title,
-.awarder {
+.awarder,
+.issuer {
     display: inline;
 }
 
@@ -360,14 +361,16 @@ h2.section-title {
 .company::before,
 .institution::before,
 .organization::before,
-.awarder::before {
+.awarder::before,
+.issuer::before {
     content: "at "
 }
 
 .company,
 .institution,
 .organization,
-.awarder {
+.awarder,
+.issuer {
     color: #606d76;
     font-weight: 400;
 }
@@ -645,7 +648,8 @@ ul.courses li:hover {
     .company::before,
     .institution::before,
     .organization::before,
-    .awarder::before {
+    .awarder::before,
+    .issuer::before {
         content: "| ";
     }
     .header-left {
@@ -683,7 +687,8 @@ ul.courses li:hover {
     .company::before,
     .institution::before,
     .organization::before,
-    .awarder::before {
+    .awarder::before,
+    .issuer::before {
         content: "at ";
     }
     .main-summary {

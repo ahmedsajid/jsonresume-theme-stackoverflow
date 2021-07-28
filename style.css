@@ -361,11 +361,12 @@ h2.section-title {
 .company::before,
 .institution::before,
 .organization::before,
-.awarder::before,
-.issuer::before {
+.awarder::before {
     content: "at "
 }
-
+.issuer::before {
+    content: "by "
+}
 .company,
 .institution,
 .organization,
@@ -687,9 +688,11 @@ ul.courses li:hover {
     .company::before,
     .institution::before,
     .organization::before,
-    .awarder::before,
-    .issuer::before {
+    .awarder::before {
         content: "at ";
+    }
+    .issuer::before {
+        content: "by ";
     }
     .main-summary {
         padding: 2rem 0;

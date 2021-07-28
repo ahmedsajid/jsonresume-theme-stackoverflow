@@ -331,7 +331,8 @@ section .location {
 .area,
 .studyType,
 .title,
-.awarder {
+.awarder,
+.issuer {
   display: inline;
 }
 
@@ -351,10 +352,15 @@ section .location {
   content: "at ";
 }
 
+.issuer::before {
+  content: "by ";
+}
+
 .company,
 .institution,
 .organization,
-.awarder {
+.awarder,
+.issuer {
   color: #606d76;
   font-weight: 400;
 }
@@ -654,7 +660,8 @@ section .location {
   .company::before,
   .institution::before,
   .organization::before,
-  .awarder::before {
+  .awarder::before,
+  .issuer::before {
     content: "| ";
   }
   .header-left {
@@ -695,6 +702,9 @@ section .location {
   .organization::before,
   .awarder::before {
     content: "at ";
+  }
+  .issuer::before {
+    content: "by ";
   }
   .main-summary {
     padding: 0;

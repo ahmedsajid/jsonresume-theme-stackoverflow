@@ -6,6 +6,11 @@
   <section id="certificates">
     {{#each resume.certificates}}
     <section class="certificate-item">
+      {{#if @first}}
+      <input id="certificate-item-{{@index}}" type="checkbox" class="toggle-item" checked="checked" />
+      {{else}}
+      <input id="certificate-item-{{@index}}" type="checkbox" class="toggle-item" />
+      {{/if}}
       <label for="certificate-item-{{@index}}"></label>
       <header class="clear">
         <div class="header-left">
